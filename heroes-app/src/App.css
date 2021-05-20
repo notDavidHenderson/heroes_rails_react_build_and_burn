@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Forum|Gruppo|Josefin+Slab|Monofett|Poiret+One|Walter+Turncoat&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end Meyer Reset */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Bungee+Shade|Forum|Gruppo|Josefin+Slab|Monofett|Poiret+One|Walter+Turncoat */
+.app {
+  min-height: 100vh;
+  min-width: 100wh;
+  font-family: arial;
+  background-color: hsl(0, 0%, 97%);
+  font-family: Forum, arial;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: black;
+  font-family: Bungee Shade, arial;
+  /* background-color: #1be7ff; */
+}
+
+.nav h1 {
+  font-size: 4rem;
+  color: #f77f00;
+  text-shadow: 0 0 3px white;
+  font-family: Monofett, arial;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 100px;
+  width: 100px;
+}
+
+.home h2{
+  text-align:center;
+  font-size: 10rem;
+  margin-top: 2rem;
+  color: #f77f00;
+  text-shadow: 0 0 3px black;
+  font-family: Josefin Slab, arial;
+}
+
+button, input[type=submit] {
+  font: 400 11px system-ui;
+  font-size: 1.2rem;
+  padding: 1px 7px 2px;
+  border-width: 1px;
+  border-radius: 6px;
+  background-color: #f5efed;
+  border-style: solid;
+  border-color: rgba(255, 0, 0, 0.468);
+  cursor: pointer;
+}
+
+button:hover, input[type=submit]:hover {
+  background-color: #f7800027;
+}
+
+button:focus, input[type=submit]:focus {
+  outline: none;
+}
+
+.heros-page {
+  padding: 20px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heros-page > h2 {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 5rem;
+  color: #f77f00;
+  text-shadow: 0 0 3px black;
+  font-family: Josefin Slab, arial;
+}
+
+.new-hero {
+  margin: 20px 0;
+}
+
+.error-message {
+  color: red;
+  text-shadow: 0 0 1px black;
+  font-size: 2rem;
+}
+
+.new-hero-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.weapon-select {
+  height: 60px;
+  font-size: 2rem;
+}
+
+input[name=heroName] {
+  height: 60px;
+  font-size: 2rem;
+}
+
+.new-hero-form label, .update-hero-form label {
+  font-size: 1.5rem;
+  color: navy;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.update-hero-form label {
+  padding-top: 5px;
+}
+
+.new-hero-form-top, .new-hero-form-bottom {
+  display: flex;
+  margin: 10px 0;
+}
+
+.new-hero-form-name, .new-hero-form-weapon, .new-hero-form-power-container {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  margin-right: 10px;
+}
+
+.new-hero-form-powers {
+  display: flex;
+  color: black;
+}
+
+.update-hero-form input[type=text], .update-hero-form select  {
+  width: 95%;
+}
+
+.update-hero-form input[type=submit] {
+  margin: 10px 0;
+}
+
+.update-hero-form-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox label {
+  color: #f77f00;
+  text-shadow: 0 0 1px black;
+  font-size: 2rem;
+  padding-right: 10px;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.checkbox input[type=checkbox] {
+  height: 20px;
+  width: 20px;
+}
+
+.hero-cards-container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.hero-card-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-card-weapon {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-card {
+  border-color: #f99a0bd4;
+  background-color: #f5efed;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgb(240, 8, 8);
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-card-label {
+  display: inline-block;
+  padding-right: 10px;
+  color: #d62828;
+  text-shadow: 0 0 3px black;
+  font-size: 2.2rem;
+  /* font-family: Walter Turncoat, arial; */
+}
+
+#powers-label {
+  display: block;
+  padding-bottom: 10px;
+}
+
+.powers-list {
+  padding-left: 10px;
+}
+
+.power-names {
+  padding-bottom: 10px;
+  font-size: 3rem;
+  color: #f77f00;
+  text-shadow: 0 0 3px black;
+}
+
+.hero-card p {
+  display: inline-block;
+  margin: 5px 0 10px;
+  font-size: 3rem;
+  color: blue;
+  text-shadow: 0 0 3px black;
+}
+
+.hero-card-buttons {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 0;
+}
+
+.link {
+  font-size: 2.3rem;
+  text-decoration: none;
+  padding: 0 20px;
+  color: #f77f00;
+  text-shadow: 0 0 2px white;
+}
+
+.link:hover, .link:focus {
+  color: white;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 610px;
+}
+
+.world-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-key {
+  width: 100%;
+  padding-right: 20px;
+  font-size: 1.5rem;
+}
+
+.game-key h6 {
+  font-size: 2rem;
+}
+
+.game-key h6, .game-key p {
+  padding-bottom: 20px;
+  color: #f77f00;
+  text-shadow: 0 0 1px black;
+}
+
+.game-key .keys {
+  color: red;
+  font-size: 1.8rem;
+}
+
+.world-right-side {
+  width: 100%;
+  padding-left: 20px;
+}
+
+.game-container h2 {
+  font-size: 4rem;
+  height: 50px;
+  margin: 30px 0;
+  color: #f77f00;
+  text-shadow: 0 0 3px black;
+  font-family: Josefin Slab, arial;
+}
+
+.world-map {
+  background-color: green;
+  height: 500px;
+  width: 800px;
+  display: grid;
+  grid-template-columns: repeat(80, 10px);
+  grid-template-rows: repeat(50, 10px);
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: darkorange;
+  color: white;
+  /* transition: all 0.7s; */
+}
+
+.foe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: purple;
+  color: white;
+  grid-column: 61/66;
+  grid-row: 16/21;
+}
+
+.friend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: blue;
+  color: white;
+  grid-column: 6/11;
+  grid-row: 6/11;
+}
+
+.shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: brown;
+  color: white;
+  grid-column: 11/15;
+  grid-row: 16/21;
+}
+
+.friend-modal, .shop-modal, .foe-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 500px;
+  width: 800px;
+  font-size: 7rem;
+  background-color: rgba(0, 0, 0, 0.591);
+}
+
+.friend-modal {
+  color: yellow;
+}
+
+.shop-modal {
+  color: rgb(70, 227, 255);
+}
+
+.foe-modal {
+  color: red;
+}
