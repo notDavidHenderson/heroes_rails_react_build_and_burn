@@ -7,5 +7,5 @@ take a peek for some more sweet sweet knowledge
 
 
 
-(Ahmed)[https://github.com/LimitToInfinity]
-(me)[https://github.com/notDavidHenderosn]
+[Ahmed](https://github.com/LimitToInfinity)
+[me](https://github.com/notDavidHenderosn)
